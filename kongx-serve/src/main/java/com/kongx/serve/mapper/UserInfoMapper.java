@@ -15,7 +15,7 @@ public interface UserInfoMapper {
     @Results({
             @Result(property = "userId", column = "user_id"),
     })
-    List<UserInfo> findAllUser();
+    List<UserInfoVO> findAllUser();
 
     @Select({"<script>", "select t.user_id,t.name,t.mobile,t.status,t.email,t.creator,t.create_at,t.user_id uid from kongx_user_info t where 1=1 ",
             "<when test='job.name!=null'>",
@@ -65,7 +65,8 @@ public interface UserInfoMapper {
 
     @Select({"<script>", "SELECT DISTINCT",
             "b.id,b.parent_id parentId,",
-            "  b.NAME label,",
+            "b.NAME label,",
+            "b.sort_order,",
             "b.menu_icon icon,",
             "b.visit_view component,",
             "b.code code,",
