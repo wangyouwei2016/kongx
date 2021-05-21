@@ -25,8 +25,9 @@ public class UserInfoService implements IBaseService<UserInfoVO, String> {
     @Autowired
     private UserInfoMapper userInfoMapper;
 
-    public List<UserInfo> findAll() {
-        List<UserInfo> allUser = userInfoMapper.findAllUser();
+    @Override
+    public List<UserInfoVO> findAll(UserInfoVO userInfo) {
+        List<UserInfoVO> allUser = userInfoMapper.findAllUser();
         return allUser;
     }
 
