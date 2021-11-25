@@ -155,11 +155,11 @@ CREATE TABLE `kongx_system_function` (
 -- ----------------------------
 INSERT INTO `kongx_system_function` VALUES ('1', '-1', '', '首页', 'icon-shouye', 'page/wel', '/home', 'y', 'menu', 'kongx', '1');
 INSERT INTO `kongx_system_function` VALUES ('4', '5', '', 'Kong Shell', 'icon-shell', 'views/gateway/shell/index', 'shell', 'y', 'menu', 'kongx', '9');
-INSERT INTO `kongx_system_function` VALUES ('5', '-1', null, 'Gateway', 'icon-gateway', '', '/gateway', 'y', 'menu', 'kongx', '4');
-INSERT INTO `kongx_system_function` VALUES ('6', '5', '', 'Upstreams', 'icon-gateway', 'views/gateway/upstream/index', 'upstream', 'y', 'menu', 'kongx', '2');
-INSERT INTO `kongx_system_function` VALUES ('7', '5', null, 'Services', 'icon-services', 'views/gateway/service/index', 'service', 'y', 'menu', 'kongx', '3');
-INSERT INTO `kongx_system_function` VALUES ('8', '5', '', 'Routes', 'icon-route', 'views/gateway/routing/index', 'routing', 'y', 'menu', 'kongx', '4');
-INSERT INTO `kongx_system_function` VALUES ('9', '5', '', 'Plugins', 'icon-plugin', 'views/gateway/plugin/index', 'plugin', 'y', 'menu', 'kongx', '5');
+INSERT INTO `kongx_system_function` VALUES ('5', '-1', null, '网关管理', 'icon-gateway', '', '/gateway', 'y', 'menu', 'kongx', '4');
+INSERT INTO `kongx_system_function` VALUES ('6', '5', '', '上游管理', 'icon-gateway', 'views/gateway/upstream/index', 'upstream', 'y', 'menu', 'kongx', '2');
+INSERT INTO `kongx_system_function` VALUES ('7', '5', null, '服务管理', 'icon-services', 'views/gateway/service/index', 'service', 'y', 'menu', 'kongx', '3');
+INSERT INTO `kongx_system_function` VALUES ('8', '5', '', '路由管理', 'icon-route', 'views/gateway/routing/index', 'routing', 'y', 'menu', 'kongx', '4');
+INSERT INTO `kongx_system_function` VALUES ('9', '5', '', '插件管理', 'icon-plugin', 'views/gateway/plugin/index', 'plugin', 'y', 'menu', 'kongx', '5');
 INSERT INTO `kongx_system_function` VALUES ('10', '-1', '', '系统管理', 'icon-system', '', '/system', 'y', 'menu', 'kongx', '6');
 INSERT INTO `kongx_system_function` VALUES ('11', '10', null, '用户管理', 'icon-yonghuguanli', 'views/admin/user/index', 'user', 'y', 'menu', 'kongx', '1');
 INSERT INTO `kongx_system_function` VALUES ('12', '10', null, '角色管理', 'icon-quanxianguanli', 'views/admin/role/index', 'role', 'y', 'menu', 'kongx', '2');
@@ -218,7 +218,7 @@ INSERT INTO `kongx_system_function` VALUES ('65', '60', 'certificate_add', '新�
 INSERT INTO `kongx_system_function` VALUES ('66', '60', 'certificate_update', '修改certificate', '', '', '', 'y', 'point', 'kongx', '999');
 INSERT INTO `kongx_system_function` VALUES ('67', '60', 'certificate_delete', '删除certificate', '', '', '', 'y', 'point', 'kongx', '999');
 INSERT INTO `kongx_system_function` VALUES ('68', '-1', 'gateway-pipeline', '网关流水线', 'icon-pipeline', '', '', 'y', 'menu', 'kongx', '2');
-INSERT INTO `kongx_system_function` VALUES ('69', '68', 'pipeline', 'Pipeline', 'icon-pipeline', 'views/gateway/flow/index', 'pipeline', 'y', 'menu', 'kongx', '1');
+INSERT INTO `kongx_system_function` VALUES ('69', '68', 'pipeline', '流水线管理', 'icon-pipeline', 'views/gateway/flow/index', 'pipeline', 'y', 'menu', 'kongx', '1');
 INSERT INTO `kongx_system_function` VALUES ('70', '69', 'add_pipeline', '新增流水线', '', '', '', 'y', 'point', 'kongx', '999');
 INSERT INTO `kongx_system_function` VALUES ('71', '69', 'update_pipeline', '更新流水线', '', '', '', 'y', 'point', 'kongx', '999');
 INSERT INTO `kongx_system_function` VALUES ('72', '69', 'remove_pipeline', '删除流水线', '', '', '', 'y', 'point', 'kongx', '999');
